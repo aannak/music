@@ -60,7 +60,6 @@ WITH playlist_stats AS (
         ON p.playlist_id = pt.playlist_id
     GROUP BY p.playlist_id, p.title, p.user_id
 )
-
 SELECT
     playlist_id,
     title,
@@ -88,7 +87,6 @@ WITH artist_stats AS (
         ON t.track_id = l.track_id
     GROUP BY a.artist_id, a.name, a.country
 )
-
 SELECT
     artist_id,
     name,
